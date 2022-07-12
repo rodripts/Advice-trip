@@ -1,0 +1,64 @@
+:root {
+    --fuente-title: 'Oswald', sans-serif;
+    --fuente-texto: 'Fredoka', sans-serif;
+    --verde:  #3abb88 ;
+    --verde-hover:  #00524a;
+    --blanco: white;
+}
+body {
+    margin: 0;
+    background-color: #202124;
+    font-family: var(--fuente-title);
+    color: var(--blanco);
+    font-size: 100%;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 6em;
+}
+.hero__emojis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero__emojis div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+.hero__emojis-buttons {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    border-radius: 50%;
+    border: none;
+    margin: 15px;
+}
+.hero__emojis-buttons--active {
+    background-color: var(--verde-hover);
+}
+
+@media (max-width: 430px) {
+    .hero h1 {
+        font-size: 4em;
+        margin: 15px auto 30px;
+    }
+    .hero__emojis div {
+        font-size: 0.8em;
+    }
+    .hero__emojis-buttons {
+        width: 45px;
+        height: 45px;
+    }
+    .hero__emojis button {
+        margin: 5px;
+    }
+}
